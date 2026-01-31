@@ -1,0 +1,36 @@
+# --- Dépendances ---
+node_modules/
+.yarn/
+# On exclut tout yarn sauf les fichiers de config nécessaires
+!.yarn/releases/
+!.yarn/plugins/
+!.yarn/sdks/
+!.yarn/versions/
+.pnp.*
+
+# --- Build & Sortie ---
+dist/
+build/
+*.local
+
+# --- IDE & Éditeurs ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# --- Environnement ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

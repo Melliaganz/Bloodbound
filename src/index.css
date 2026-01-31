@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined');
+@import "tailwindcss";
+
+/* 1. Imports des polices */
+@font-face {
+  font-family: 'Cavalier';
+  src: url('/fonts/Cavalier/Cavalier-L3jE.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Milwich';
+  src: url('/fonts/Milwich/Milwich-21do.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Configuration du thème */
+@theme {
+  --color-primary: #8e1a1a;       
+  --color-primary-dark: #5a1212;  
+  --color-accent-blood: #c1272d;   
+  
+  --color-background-dark: #0a0b0d; 
+  --color-card-dark: #14161a;    
+  
+  --color-border-metal: #3a3d42;
+  --color-text-muted: #94a3b8;
+
+  --font-display: "Cavalier", sans-serif;
+  --font-serif: "Milwich", sans-serif;
+
+  --radius-default: 0px; 
+}
+
+/* 3. Couches de styles */
+@layer components {
+  .custom-divider {
+    height: 2px;
+    position: relative;
+    margin: 6rem 0;
+    background: linear-gradient(90deg, transparent 0%, var(--color-primary) 50%, transparent 100%);
+  }
+
+  .custom-divider::after {
+    content: '◆';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+    background: var(--color-background-dark);
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .misty-overlay {
+    background: linear-gradient(to bottom, rgba(24, 25, 42, 0.4) 0%, rgba(24, 25, 42, 1) 95%);
+  }
+}
+
+@layer utilities {
+  .bg-hero-pattern {
+    background-image: url('/img/bloodbound.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* 4. Styles de base */
+body {
+  background-color: var(--color-background-dark);
+  font-family: var(--font-display);
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
