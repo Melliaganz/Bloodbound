@@ -5,15 +5,16 @@
 @font-face {
   font-family: 'Cavalier';
   src: url('/fonts/Cavalier/Cavalier-L3jE.ttf') format('truetype');
-  font-weight: 200 800;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Milwich';
-  src: url('/fonts/Milwich/Milwich-21do.ttf') format('truetype');
-  font-weight: 200 800;
+  src: url('/fonts/Milwich/Milwich.woff2') format('woff2'),
+       url('/fonts/Milwich/Milwich.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

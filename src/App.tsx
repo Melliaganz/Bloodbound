@@ -5,15 +5,16 @@ import Hero from "./components/Hero";
 import CharacterCard from "./components/CharacterCard";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
-import type { Character } from "./types/game";
 import Team from "./components/Team";
+import { CHARACTERS_IMAGES } from "./constants/characters";
+import type { Character } from "./types/game";
 
 const App: React.FC = () => {
   const { t } = useTranslation();
 
-  const characters = t("characters.items", {
+  const charactersTexts = t("characters.items", {
     returnObjects: true,
-  }) as Character[];
+  }) as Omit<Character, 'img'>[];
 
   return (
     <div className="bg-background-dark min-h-screen selection:bg-accent-blood selection:text-white">
@@ -32,9 +33,18 @@ const App: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {Array.isArray(characters) &&
-            characters.map((char, i) => <CharacterCard key={i} {...char} />)}
+          {Array.isArray(charactersTexts) &&
+            charactersTexts.map((textData, i) => (
+              <CharacterCard 
+                key={i} 
+                title={textData.title}
+                role={textData.role}
+                desc={textData.desc}
+                img={CHARACTERS_IMAGES[i]} 
+              />
+            ))}
         </div>
+        
         <Team />
         <Features />
       </main>

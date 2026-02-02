@@ -14,11 +14,11 @@ const Team: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-6xl text-white uppercase tracking-tighter mb-4">
+          <h2 className="font-display text-4xl md:text-6xl text-white uppercase tracking-tighter mb-4">
             {t('team.title')}
           </h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
-          <p className="font-display text-primary uppercase tracking-[0.3em] text-sm font-bold">
+          <p className="font-serif text-primary uppercase tracking-[0.3em] text-sm font-bold">
             {t('team.subtitle')}
           </p>
         </div>
