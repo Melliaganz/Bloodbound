@@ -1,0 +1,66 @@
+{
+  "name": "Bloodbound",
+  "app": {
+    "chronicles": "La Malédiction",
+    "worldTitle": "La Descente d'un Père"
+  },
+  "hero": {
+    "tagline": "Un pacte de sang signé dans le désespoir",
+    "titleSurvive": "Sauver le fils,",
+    "titleEternal": "Tuer le mal",
+    "desc": "Pour briser la magie vampirique, un père doit traquer la créature responsable. Dans cette forêt de brume, le sang est la seule monnaie d'échange pour votre humanité.",
+    "firstButton": "Entrer dans les Bois",
+    "secondButton": "Voir le Pacte"
+  },
+  "characters": {
+    "items": [
+      {
+        "title": "Le Père Maudit",
+        "role": "Le Lié",
+        "desc": "Son âme est enchaînée à la magie du sang. Chaque coup porté sauve la vie de son fils, mais lui coûte son humanité."
+      },
+      {
+        "title": "Le Nécromancien",
+        "role": "L'Innocent",
+        "desc": "Victime d'une attaque de vampire. Ses veines coulent désormais d'une magie que seul le sacrifice de son père peut contenir."
+      },
+      {
+        "title": "Le Traqueur de Sang",
+        "role": "L'Antagoniste",
+        "desc": "Une créature millénaire de la brume. Elle ne veut pas seulement du sang ; elle veut que le cycle de souffrance soit éternel."
+      }
+    ]
+  },
+  "features": {
+    "title": "La Chasse commence",
+    "desc": "Trouverez-vous la créature avant que la magie du sang ne consume ce qu'il reste de votre âme ?",
+    "button": "Briser le Sort"
+  },
+  "nav": {
+    "world": "Voyage",
+    "characters": "Lignées",
+    "lore": "Archives",
+    "join": "Souffrir avec nous"
+  },
+  "team": {
+    "title": "La Meute Hellhounds",
+    "subtitle": "Les architectes de votre cauchemar",
+    "members": [
+      {
+        "name": "Mathilde",
+        "role": "Alpha / Lead Dev",
+        "bio": "A signé le premier pacte. Maître de la magie du sang et du code."
+      },
+      {
+        "name": "Membre 2",
+        "role": "Traqueur / Game Design",
+        "bio": "Tisse les fils de la malédiction pour que nul n'échappe aux bois."
+      },
+      {
+        "name": "Membre 3",
+        "role": "Artisan / Visuels",
+        "bio": "Donne forme aux ombres et de la couleur aux restes viscéraux."
+      }
+    ]
+  }
+}
